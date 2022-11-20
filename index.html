@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="card card--primary" id="primary">
+      <div class="card--primary__icon | rounded-bg">
+        <img src="./images/icon-star.svg" alt="Star">
+      </div>
+      <div class="card--primary__text">
+        <div class="card--primary__heading | heading">How did we do?</div>
+        <div class="card--primary__paragraph | paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</div>
+      </div>
+      <div class="card--primary__rating" id="buttons">
+        <button class="card--primary__button | rounded-bg">1</button>
+        <button class="card--primary__button | rounded-bg">2</button>
+        <button class="card--primary__button | rounded-bg">3</button>
+        <button class="card--primary__button | rounded-bg">4</button>
+        <button class="card--primary__button | rounded-bg">5</button>
+      </div>
+      <button class="card--primary__submit" id="submit">Submit</button>
+    </div>
+    <div class="card card--secondary hidden" id="secondary">
+      <div class="card--secondary__icon">
+        <img src="./images/illustration-thank-you.svg" alt="Thank You">
+      </div>
+      <div class="card--secondary__selection">You selected <span id="rate"></span> out of 5</div>
+      <div class="card--primary__text">
+        <div class="card--secondary__heading | heading">Thank you!</div>
+        <div class="card--secondary__paragraph | paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
